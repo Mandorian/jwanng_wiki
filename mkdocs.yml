@@ -1,4 +1,5 @@
 site_name: jwanng的笔记本
+site_url: https://jwanng.wiki/
 copyright: Copyright &copy; 2022-2023 <a href="https://github.com/TonyCrane" target="_blank" rel="noopener">jwanng</a>
 
 
@@ -30,7 +31,7 @@ theme:
     - navigation.indexes
     # - navigation.tabs.sticky
     - toc.follow
-    
+
 markdown_extensions:
   - toc:
       permalink: true
@@ -58,6 +59,7 @@ markdown_extensions:
       generic: true
 
 plugins:
+  - rss
   - search
   - glightbox:
       width: 80%
