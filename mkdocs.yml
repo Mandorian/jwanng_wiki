@@ -1,0 +1,109 @@
+site_name: jwanng的笔记本
+copyright: Copyright &copy; 2022-2023 <a href="https://github.com/TonyCrane" target="_blank" rel="noopener">jwanng</a>
+
+
+theme:
+  icon:
+    logo: material/notebook-outline
+  favicon: assets/images/logo.png
+  name: material
+  language: 'zh'
+  palette: 
+    - scheme: slate
+      primary: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to Elight modeW
+    - scheme: default
+      primary: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+  features:
+    - content.code.annotate
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+    # - navigation.tabs.sticky
+    - toc.follow
+  
+  font: false
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - def_list
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+
+plugins:
+  - rss
+  - search
+  - glightbox:
+      width: 80%
+extra_javascript:
+  - javascripts/katex.js 
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+
+
+extra_css:
+  - stylesheets/extra.css
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css
+  - https://cdn.tonycrane.cc/lxgw/lxgwscreen.css
+  - ./css/tasklist.css
+  - ./css/custom.css
+  - ./css/card.css
+  - ./css/flink.css
+  - ./css/changelog_extra.css
+
+
+nav:
+  - Home:
+    - index.md
+  - Computer Science:
+    - cs/index.md
+    - Algorithm:
+      - cs/algorithm/index.md
+      - 动态规划: cs/algorithm/dp/index.md
+      - 贪心: cs/algorithm/greedy/index.md
+  - Writeups:
+    - writeups/index.md
+    - Code Forces: 
+      - writeups/codeforces/index.md
+      - Div2:
+        - writeups/codeforces/div2/index.md
+      - Div3:
+        - writeups/codeforces/div3/index.md
+        - 895: writeups/codeforces/div3/895.md
+      - Div4:
+        - writeups/codeforces/div4/index.md
+    - At Coder: 
+      - writeups/atcoder/index.md
+      - ABC:
+        - writeups/atcoder/abc/index.md
+        - 324: writeups/atcoder/abc/324.md
