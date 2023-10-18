@@ -98,6 +98,7 @@ nav:
       - Div3:
         - writeups/codeforces/div3/index.md
         - 895: writeups/codeforces/div3/895.md
+        - 900: writeups/codeforces/div3/900.md
       - Div4:
         - writeups/codeforces/div4/index.md
     - At Coder: 
