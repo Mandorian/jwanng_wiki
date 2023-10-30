@@ -1,6 +1,6 @@
 site_name: jwanng的笔记本
 site_url: https://jwanng.wiki/
-copyright: Copyright &copy; 2022-2023 <a href="https://github.com/TonyCrane" target="_blank" rel="noopener">jwanng</a>
+copyright: Copyright &copy; 2022-2023 <a href="https://github.com/Mandorian" target="_blank" rel="noopener">jwanng</a>
 
 theme:
   icon:
@@ -21,9 +21,10 @@ theme:
         name: Switch to dark mode
 
   features:
+    - content.code.copy
     - content.code.annotate
-    # - navigation.instant
-    # - navigation.instant.prefetch
+    - navigation.instant
+    - navigation.instant.prefetch
     - navigation.tracking
     - navigation.tabs
     - navigation.top
@@ -89,6 +90,9 @@ nav:
       - cs/algorithm/index.md
       - 动态规划: cs/algorithm/dp/index.md
       - 贪心: cs/algorithm/greedy/index.md
+    - 计算机组成原理:
+      - cs/ccp/index.md
+      - Chapter 1: cs/ccp/ch1.md
   - Writeups:
     - writeups/index.md
     - Code Forces: 
@@ -106,3 +110,7 @@ nav:
       - ABC:
         - writeups/atcoder/abc/index.md
         - 324: writeups/atcoder/abc/324.md
+
+  - Others:
+    - 课程笔记:
+      - others/index.md
