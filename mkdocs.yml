@@ -1,0 +1,143 @@
+site_name: jwanng的笔记本
+site_url: https://mandorian.github.io/jwanng_wiki
+copyright: Copyright &copy; 2023-2024 <a href="https://github.com/Mandorian" target="_blank" rel="noopener">jwanng</a>
+
+theme:
+  icon:
+    logo: material/notebook-outline
+  favicon: assets/images/logo.png
+  name: material
+  language: 'zh'
+  palette: 
+    - scheme: slate
+      primary: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to Elight modeW
+    - scheme: default
+      primary: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+  features:
+    - content.code.copy
+    - content.code.annotate
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.top
+    - navigation.indexes
+    # - navigation.tabs.sticky
+    - toc.follow
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - def_list
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.snippets
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+
+plugins:
+  - rss
+  - search
+  - glightbox:
+      width: 80%
+extra_javascript:
+  - javascripts/katex.js 
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+
+
+extra_css:
+  - stylesheets/extra.css
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css
+  - https://cdn.tonycrane.cc/lxgw/lxgwscreen.css
+  - css/tasklist.css
+  - css/custom.css
+  - css/card.css
+  - css/flink.css
+  - css/changelog_extra.css
+
+
+nav:
+  - Home:
+    - index.md
+  - Computer Science:
+    - cs/index.md
+    - Algorithm:
+      - cs/algorithm/index.md
+      - 动态规划: cs/algorithm/dp/index.md
+      - 贪心: cs/algorithm/greedy/index.md
+    - 计算机组成原理:
+      - cs/ccp/index.md
+      - Chapter 1: cs/ccp/ch1.md
+  - Writeups:
+    - writeups/index.md
+    - Code Forces: 
+      - writeups/codeforces/index.md
+      - Div2:
+        - writeups/codeforces/div2/index.md
+      - Div3:
+        - writeups/codeforces/div3/index.md
+        - 895: writeups/codeforces/div3/895.md
+        - 900: writeups/codeforces/div3/900.md
+      - Div4:
+        - writeups/codeforces/div4/index.md
+    - At Coder: 
+      - writeups/atcoder/index.md
+      - ABC:
+        - writeups/atcoder/abc/index.md
+        - 324: writeups/atcoder/abc/324.md
+
+  - Others:
+    - others/index.md
+    - 课程笔记:
+      - others/course/index.md
+      - 高等数学: 
+        - others/course/further_math/index.md
+  
+  - mit6.s081:
+    - mit6.s081/index.md
+    - Lec01 Introduction and Examples \(Robert\): mit6.s081/lec01-introduction-and-examples/README.md
+    - Lec03 OS Organization and System Calls \(Frans\): mit6.s081/lec03-os-organization-and-system-calls/README.md
+    - Lec04 Page tables \(Frans\): mit6.s081/lec04-page-tables-frans/README.md
+    - Lec05 Calling conventions and stack frames RISC-V \(TA\): mit6.s081/lec05-calling-conventions-and-stack-frames-risc-v/README.md
+    - Lec06 Isolation & system call entry/exit \(Robert\): mit6.s081/lec06-isolation-and-system-call-entry-exit-robert/README.md
+    - Lec08 Page faults \(Frans\): mit6.s081/lec08-page-faults-frans/README.md
+    - Lec08 Page faults \(Frans\): mit6.s081/lec08-page-faults-frans/README.md
+    - Lec09 Interrupts \(Frans\): mit6.s081/lec09-interrupts/README.md
+    - Lec10 Multiprocessors and locking \(Frans\): mit6.s081/lec10-multiprocessors-and-locking/README.md
+    - Lec11 Thread switching \(Robert\): mit6.s081/lec11-thread-switching-robert/README.md
+    - Lec13 Sleep & Wake up \(Robert\): mit6.s081/lec13-sleep-and-wakeup-robert/README.md
+    - Lec14 File systems \(Frans\): mit6.s081/lec14-file-systems-frans/README.md
+    - Lec15 Crash recovery \(Frans\): mit6.s081/lec15-crash-recovery-frans/README.md
+    - Lec16  File system performance and fast crash recovery \(Robert\): mit6.s081/lec16-file-system-performance-and-fast-crash-recoery-robert/README.md)
+    - Lec17 Virtual memory for applications \(Frans\): mit6.s081/lec17-virtual-memory-for-applications-frans/README.md
+    - Lec18 OS organization \(Robert\): mit6.s081/lec18-os-organization-robert/README.md
+    - Lec19 Virtual Machines \(Robert\): /mit6.s081/lec19-virtual-machines-robert/README.md
+    - Lec20 Kernels and HLL \(Frans\): mit6.s081/lec20-kernels-and-hll-frans/README.md
+    - Lec21 Networking \(Robert\): mit6.s081/lec21-networking-robert/README.md
+    - Lec22 Meltdown \(Robert\): mit6.s081/lec22-meltdown-robert/README.md
+    - Lec23 RCU \(Robert\): mit6.s081/lec23-rcu-robert/README.md
