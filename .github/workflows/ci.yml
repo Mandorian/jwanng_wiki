@@ -25,5 +25,5 @@ jobs:
           mkdocs-material \
           mkdocs-rss-plugin \
           mkdocs-glightbox \
-		  mkdocs-git-revision-date-localized-plugin \
+          mkdocs-git-revision-date-localized-plugin
       - run: mkdocs gh-deploy --force
