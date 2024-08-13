@@ -59,6 +59,10 @@ markdown_extensions:
       generic: true
 
 plugins:
+  - git-revision-date-localized:
+      type: datetime
+      #fallback_to_build_date: true
+      enable_creation_date: true
   - rss
   - search
   - glightbox:
@@ -120,24 +124,23 @@ nav:
   
   - mit6.s081:
     - mit6.s081/index.md
-    - Lec01 Introduction and Examples \(Robert\): mit6.s081/lec01-introduction-and-examples/README.md
-    - Lec03 OS Organization and System Calls \(Frans\): mit6.s081/lec03-os-organization-and-system-calls/README.md
-    - Lec04 Page tables \(Frans\): mit6.s081/lec04-page-tables-frans/README.md
-    - Lec05 Calling conventions and stack frames RISC-V \(TA\): mit6.s081/lec05-calling-conventions-and-stack-frames-risc-v/README.md
-    - Lec06 Isolation & system call entry/exit \(Robert\): mit6.s081/lec06-isolation-and-system-call-entry-exit-robert/README.md
-    - Lec08 Page faults \(Frans\): mit6.s081/lec08-page-faults-frans/README.md
-    - Lec08 Page faults \(Frans\): mit6.s081/lec08-page-faults-frans/README.md
-    - Lec09 Interrupts \(Frans\): mit6.s081/lec09-interrupts/README.md
-    - Lec10 Multiprocessors and locking \(Frans\): mit6.s081/lec10-multiprocessors-and-locking/README.md
-    - Lec11 Thread switching \(Robert\): mit6.s081/lec11-thread-switching-robert/README.md
-    - Lec13 Sleep & Wake up \(Robert\): mit6.s081/lec13-sleep-and-wakeup-robert/README.md
-    - Lec14 File systems \(Frans\): mit6.s081/lec14-file-systems-frans/README.md
-    - Lec15 Crash recovery \(Frans\): mit6.s081/lec15-crash-recovery-frans/README.md
-    - Lec16  File system performance and fast crash recovery \(Robert\): mit6.s081/lec16-file-system-performance-and-fast-crash-recoery-robert/README.md)
-    - Lec17 Virtual memory for applications \(Frans\): mit6.s081/lec17-virtual-memory-for-applications-frans/README.md
-    - Lec18 OS organization \(Robert\): mit6.s081/lec18-os-organization-robert/README.md
-    - Lec19 Virtual Machines \(Robert\): /mit6.s081/lec19-virtual-machines-robert/README.md
-    - Lec20 Kernels and HLL \(Frans\): mit6.s081/lec20-kernels-and-hll-frans/README.md
-    - Lec21 Networking \(Robert\): mit6.s081/lec21-networking-robert/README.md
-    - Lec22 Meltdown \(Robert\): mit6.s081/lec22-meltdown-robert/README.md
-    - Lec23 RCU \(Robert\): mit6.s081/lec23-rcu-robert/README.md
+    # - Lec01 Introduction and Examples \(Robert\): mit6.s081/lec01-introduction-and-examples/README.md
+    # - Lec03 OS Organization and System Calls \(Frans\): mit6.s081/lec03-os-organization-and-system-calls/README.md
+    # - Lec04 Page tables \(Frans\): mit6.s081/lec04-page-tables-frans/README.md
+    # - Lec05 Calling conventions and stack frames RISC-V \(TA\): mit6.s081/lec05-calling-conventions-and-stack-frames-risc-v/README.md
+    # - Lec06 Isolation & system call entry/exit \(Robert\): mit6.s081/lec06-isolation-and-system-call-entry-exit-robert/README.md
+    # - Lec08 Page faults \(Frans\): mit6.s081/lec08-page-faults-frans/README.md
+    # - Lec09 Interrupts \(Frans\): mit6.s081/lec09-interrupts/README.md
+    # - Lec10 Multiprocessors and locking \(Frans\): mit6.s081/lec10-multiprocessors-and-locking/README.md
+    # - Lec11 Thread switching \(Robert\): mit6.s081/lec11-thread-switching-robert/README.md
+    # - Lec13 Sleep & Wake up \(Robert\): mit6.s081/lec13-sleep-and-wakeup-robert/README.md
+    # - Lec14 File systems \(Frans\): mit6.s081/lec14-file-systems-frans/README.md
+    # - Lec15 Crash recovery \(Frans\): mit6.s081/lec15-crash-recovery-frans/README.md
+    # - Lec16  File system performance and fast crash recovery \(Robert\): mit6.s081/lec16-file-system-performance-and-fast-crash-recoery-robert/README.md)
+    # - Lec17 Virtual memory for applications \(Frans\): mit6.s081/lec17-virtual-memory-for-applications-frans/README.md
+    # - Lec18 OS organization \(Robert\): mit6.s081/lec18-os-organization-robert/README.md
+    # - Lec19 Virtual Machines \(Robert\): /mit6.s081/lec19-virtual-machines-robert/README.md
+    # - Lec20 Kernels and HLL \(Frans\): mit6.s081/lec20-kernels-and-hll-frans/README.md
+    # - Lec21 Networking \(Robert\): mit6.s081/lec21-networking-robert/README.md
+    # - Lec22 Meltdown \(Robert\): mit6.s081/lec22-meltdown-robert/README.md
+    # - Lec23 RCU \(Robert\): mit6.s081/lec23-rcu-robert/README.md
